@@ -57,7 +57,7 @@ userQueue.process(async (job, done) => {
   }
   console.log(`Welcome ${user.email}!`);
   try {
-    const mailSubject = 'Welcome to ALX-Files_Manager by B3zaleel';
+    const mailSubject = 'Welcome ALX-Files_Manager';
     const mailContent = [
     ].join('');
     Mailer.sendMail(Mailer.buildMessage(user.email, mailSubject, mailContent));
